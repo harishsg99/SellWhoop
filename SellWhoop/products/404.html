@@ -1,1 +1,12 @@
+{% extends 'base_layout.html' %}
 
+{% block title %} Product Not found {% endblock %)  
+
+{% block content %}
+    <h1> Whoops we couldn't find that product </h1>
+ 
+    <a href="{{ url_for('products.index')}}" class btn btn-primary"> 
+    View All Products
+    </a>
+
+{% endblock %}
