@@ -1,1 +1,28 @@
 
+{% extends 'base_layout.html' %}
+
+{% block title %} All Products {% endblock %)  
+
+{% block content %}
+    <table>
+        <head>
+          <tr>
+            <th> Name </th>
+            <th> Description </th>
+          </tr>
+              
+        </head>
+        <tbody>
+          {% for product in products %}
+              <tr>
+               <td>
+                 {{ product.name }}
+               </td>
+                <td>
+                 {{ product.description }}
+               </td>
+                
+              </tr>
+          {% endfor %}
+    </table>
+{% endblock %}
