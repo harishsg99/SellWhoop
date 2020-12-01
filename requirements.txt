@@ -3,3 +3,4 @@ gunicorn
 pytest-flask
 pytest
 pytest-cov
+flask-sqlalchemy
