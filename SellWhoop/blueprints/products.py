@@ -10,5 +10,5 @@ def index():
 @products.route('/<int:product_id>')
 def details(product_id):
   product = product.query.get_or_404(product_id)
-  return product.name
+  return render_template('products/details.html' , product=product)
 
