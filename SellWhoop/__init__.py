@@ -8,4 +8,6 @@ def create_app(environment_name ='dev'):
     app = Flask(__name__)
     app.config.from_object(configurations[environment_name])
     db.init_app(app)
+    
+    app.register_blueprints(product , urlprefix="/product")
     return app
